@@ -1,5 +1,4 @@
-[![CI with install](https://github.com/Asureda/bead-spring-polymer/actions/workflows/ci_compile.yml/badge.svg)](https://github.com/Asureda/
-bead-spring-polymer/actions/workflows/ci_compile.yml)
+![CI with install](https://github.com/Asureda/bead-spring-polymer/actions/workflows/ci_compile.yml/badge.svg)
 
 # Brownian dynamics simulation of a coarse-grained bead and  spring polymer chain
 The behaviour of dilute solutions of linear polyelectrolyte molecules is modelled by using the 
