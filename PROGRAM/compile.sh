@@ -15,12 +15,12 @@ gflags_soft='-Wall -fbounds-check -Wno-tabs'
 iflags_hard='-check all -fpe0 -warn -traceback -debug extended'
 iflags_soft=''
 
-flags=
+flags=$gflags_soft
 #$gflags_hard
 #opt=
 opt='-O'
 
-$comp1 $opt -c secs.c
+$comp2 $opt -c secs.c
 $comp2 $opt -c $flags ran2.f
 $comp2 $opt -c $flags r1279.f90
 $comp2 $opt -c $flags read_data.f90
