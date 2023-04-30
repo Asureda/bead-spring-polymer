@@ -1,0 +1,10 @@
+2			# Number of monomers
+2			# Characteristic length of the monomers
+2			# Nº realizations
+100.			# L box
+1.			# Temperature
+0.00001			# dt
+160			# Equilibration steps
+10			# Production steps
+0.001			# Measuring steps
+.FALSE.     		# Write trajectory
