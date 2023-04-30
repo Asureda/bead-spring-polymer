@@ -15,20 +15,20 @@ gflags_soft='-Wall -fbounds-check -Wno-tabs'
 iflags_hard='-check all -fpe0 -warn -traceback -debug extended'
 iflags_soft=''
 
-flags=$gflags_soft
+#flags=$gflags_soft
 #$gflags_hard
 #opt=
 opt='-O'
 
-$comp2 $opt -c secs.c
-$comp2 $opt -c $flags ran2.f
-$comp2 $opt -c $flags r1279.f90
-$comp2 $opt -c $flags read_data.f90
-$comp2 $opt -c $flags init_vars.f90
-$comp2 $opt -c $flags routines.f90
-$comp2 $opt -c $flags main.f90
+$comp1 $opt -c secs.c
+$comp1 $opt -c $flags ran2.f
+$comp1 $opt -c $flags r1279.f90
+$comp1 $opt -c $flags read_data.f90
+$comp1 $opt -c $flags init_vars.f90
+$comp1 $opt -c $flags routines.f90
+$comp1 $opt -c $flags main.f90
 #$comp2 mainSQA.o secs.o ran2.o r1279.o initialization.o init_vars.o initial_config.o thermo.o  $opt $flags -o r_mainSQA
-$comp2 main.o secs.o ran2.o r1279.o read_data.o init_vars.o routines.o  $opt $flags -o r_main
+$comp1 main.o secs.o ran2.o r1279.o read_data.o init_vars.o routines.o  $opt $flags -o r_main
 ##gfortran mainSQA.o dummy.x -o r_mainSQA
 rm *.o
 rm *.mod
