@@ -1,0 +1,18 @@
+name: CI compile
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: Ejecutar primer script
+        working-directory: ./PROGRAM
+        run: |
+          chmod +x compile.sh
+          ./compile.sh
