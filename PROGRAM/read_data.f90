@@ -7,7 +7,7 @@ MODULE READ_DATA
     INTEGER :: steps_eq, steps_prod, steps_measure
     !
     INTEGER*16, DIMENSION(:), ALLOCATABLE :: histo_y
-    INTEGER :: k_max
+    INTEGER :: Kmax
     LOGICAL :: traj_print
 
     CONTAINS
